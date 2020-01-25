@@ -1,0 +1,31 @@
+:root {
+    --color-text: #2c3e50;
+    --color-text-note: #6f7275;
+
+    --color-primary: #46bd87;
+    --color-secondary: #35495e;
+    --color-border-default: #eaecef;
+
+    --blocks-padding: 1em 1.5em;
+    --blocks-border-radius: 1em;
+
+    --border-radius-elements: 0.4em;
+
+    --transition-time-fast: 0.2s;
+    --transition-time-default: 0.4s;
+    --transition-time-slow: 0.8s;
+
+    --transition-fast: all 0.2s ease-in;
+    --transition-default: all 0.4s ease-in;
+    --transition-slow: all 0.8s ease-in;
+
+
+    --main-bg: #fff;
+
+    --header-bg: #fff;
+    --header-border-color: var(--color-border-default);
+
+    --sidebar-bg: #263238;
+
+    --menu-text-color: #2c3e50;
+}
