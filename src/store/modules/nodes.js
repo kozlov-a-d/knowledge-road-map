@@ -1,8 +1,8 @@
-import db from '@/db';
+import data from '@/data';
 
 export default {
     state: {
-        nodes: db.nodes
+        nodes: data.nodes
     },
     getters: {
         nodes: (state) => state.nodes,

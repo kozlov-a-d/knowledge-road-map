@@ -11,6 +11,7 @@
 
 <script>
 import NodesListItem from '@/components/NodesListItem';
+import data from '@/data';
 
 export default {
     name: 'NodesList',
@@ -19,7 +20,8 @@ export default {
     },
     computed: {
         nodes () { 
-            return this.$store.getters.nodes;
+            // return this.$store.getters.nodes;
+            return data.nodes;
         },
     },
     methods: {
