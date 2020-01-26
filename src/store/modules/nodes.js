@@ -15,6 +15,11 @@ export default {
         createNode (state, payload) {
             state.nodes.push(payload);
         },
+        updateNode (state, payload) {
+            state.nodes.forEach((item) => {
+                if (item.id == payload.id) { item = payload; }
+            });
+        },
         removeNode (state, payload) {
             state.nodes = state.nodes.filter(item => item.id !== payload);
         }

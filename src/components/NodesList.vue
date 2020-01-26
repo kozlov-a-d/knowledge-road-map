@@ -1,5 +1,6 @@
 <template>
     <div class="nodes-list">
+        <button class="btn btn--success" v-on:click="add">Add</button>
         <ul class="nodes-list__list">
             <li class="nodes-list__item" v-for="node in nodes" v-bind:key="node.id">
                 <NodesListItem v-bind:node="node"/>
@@ -9,8 +10,7 @@
 </template>
 
 <script>
-import {mapGetters} from 'vuex';
-import NodesListItem from '@/components/NodeListItem';
+import NodesListItem from '@/components/NodesListItem';
 
 export default {
     name: 'NodesList',
@@ -18,7 +18,14 @@ export default {
         NodesListItem
     },
     computed: {
-        ...mapGetters(['nodes']),
+        nodes () { 
+            return this.$store.getters.nodes;
+        },
+    },
+    methods: {
+        add: function () {
+            this.$router.push('/node/new');
+        }
     }
 }
 </script>

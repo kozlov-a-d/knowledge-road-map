@@ -1,7 +1,7 @@
 <template>
     <div class="node-card">
         <div class="node-card__header">
-            <a class="node-card__title" href="">{{ node.title }}</a>
+            <router-link class="node-card__title" :to="{ name: 'node', params: { id: node.id } }">{{ node.title }}</router-link>
             <div class="node-card__updated">
                 last updated <span class="node-card__date">{{ node.update.toLocaleString("ru") }}</span>
                 by <span class="node-card__author">{{ node.author }}</span>

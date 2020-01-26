@@ -6,6 +6,11 @@
     --color-secondary: #35495e;
     --color-border-default: #eaecef;
 
+    --color-danger: #ca1932;
+    --color-warn: #d4c91f;
+    --color-success: #19b119;
+    --color-disable: #cdd1d3;
+
     --blocks-padding: 1em 1.5em;
     --blocks-border-radius: 1em;
 
@@ -28,4 +33,18 @@
     --sidebar-bg: #263238;
 
     --menu-text-color: #2c3e50;
+
+
+    --form-item-margin: 0 0 1.5em;
+
+    --form-item-title-font-size: 1em;
+    --form-item-title-font-weight: 600;
+    --form-item-title-line-height: 2.5em;
+
+    --form-item-field-height: 2.5em;
+    --form-item-field-padding: 0 .8em;
+    --form-item-field-padding-textarea: .4em .8em;
+    --form-item-field-background: #fff;
+    --form-item-field-border: 1px solid var(--color-border-default);
+    --form-item-field-border-radius: var(--border-radius-elements);
 }
